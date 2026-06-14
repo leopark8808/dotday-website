@@ -49,6 +49,7 @@ a:hover { text-decoration: underline; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; color: var(--text); }
+.brand:hover { text-decoration: none; }
 .brand .logo { width: 28px; height: 28px; display: block; }
 .nav { display: flex; align-items: center; }
 .nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
@@ -64,7 +65,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── 히어로 ── */
-.hero { text-align: center; padding: 64px 0 60px; }
+.hero { text-align: center; padding-block: 64px 60px; }
 .hero-logo {
   width: 96px; height: 96px; display: block; margin: 0 auto 16px;
   filter: drop-shadow(0 10px 30px rgba(108,92,231,.35));
@@ -98,7 +99,7 @@ a:hover { text-decoration: underline; }
 .section-sub { text-align: center; color: var(--muted); font-size: 15px; margin-top: 8px; }
 
 /* ── 시작하기 ── */
-.steps { padding: 24px 0; }
+.steps { padding-block: 24px; }
 .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
 .step { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .step-num {
@@ -113,7 +114,7 @@ a:hover { text-decoration: underline; }
 .faq { padding: 48px 0 40px; }
 
 /* ── 마무리 CTA ── */
-.cta-wrap { padding: 40px 0 88px; }
+.cta-wrap { padding-block: 40px 88px; }
 .cta {
   text-align: center;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
