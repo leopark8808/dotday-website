@@ -29,16 +29,16 @@
     <p class="updated">시행일: 2026년 6월 14일</p>
 
     <p>
-      DotDay(이하 "본 앱")는 바탕화면에 월간 캘린더 위젯을 표시하는 Windows 데스크톱 애플리케이션입니다.
-      본 방침은 본 앱이 사용자의 Google 계정 및 캘린더 데이터를 어떻게 수집·이용·보관하는지 설명합니다.
+      DotDay는 바탕화면에 월간 캘린더 위젯을 표시하는 Windows 데스크톱 애플리케이션입니다.
+      본 방침은 DotDay가 사용자의 Google 계정 및 캘린더 데이터에 어떻게 접근하고, 이를 어떻게 이용·보관하는지 설명합니다.
     </p>
 
     <h2>1. 접근·저장하는 정보</h2>
-    <p>로그인(계정 아이디·비밀번호)은 Google이 직접 처리하며, 본 앱은 비밀번호 등 로그인 정보에 접근하지 않습니다. 본 앱은 사용자가 Google 계정 연동을 직접 진행한 경우에 한해 다음 정보에 접근합니다.</p>
+    <p>Google 로그인은 Google이 직접 처리하며, DotDay는 사용자의 Google 아이디·비밀번호에 접근하지 않습니다. 사용자가 직접 Google 계정을 연결한 경우에만 아래 정보에 접근합니다.</p>
     <ul>
-      <li><strong>OAuth 인증 토큰</strong> — Google이 발급한 캘린더 접근 토큰으로, 인증 유지를 위해 사용자 기기에 로컬 저장합니다(외부로 전송하지 않음).</li>
+      <li><strong>OAuth 인증 토큰</strong> — Google이 발급한 캘린더 접근용 인증 정보로, 로그인 상태 유지를 위해 사용자 기기에만 저장됩니다.</li>
       <li><strong>Google 캘린더 일정 데이터</strong> — 일정의 제목, 날짜·시간, 설명, 위치, 색상</li>
-      <li><strong>캘린더 목록 정보</strong> — 캘린더 이름·색상 등 메타데이터</li>
+      <li><strong>캘린더 목록 정보</strong> — 캘린더 이름, 색상 등 메타데이터</li>
     </ul>
     <p>위 데이터는 캘린더 읽기/쓰기 권한(<code>https://www.googleapis.com/auth/calendar</code>)으로 접근합니다.</p>
 
@@ -47,34 +47,34 @@
       <li>바탕화면 위젯과 앱 화면에 사용자의 일정을 표시</li>
       <li>사용자가 요청한 경우 일정의 추가·수정·삭제</li>
     </ul>
-    <p>본 앱은 위 목적 외의 용도로 데이터를 이용하지 않으며, 광고·프로파일링·분석 목적으로 사용하지 않습니다.</p>
+    <p>DotDay는 위 목적 외의 용도로 데이터를 이용하지 않으며, 광고·프로파일링·분석 목적으로 사용하지 않습니다.</p>
 
     <h2>3. 정보의 보관 및 보안</h2>
     <ul>
-      <li>모든 데이터(인증 토큰, 캘린더 캐시)는 <strong>사용자 기기 내부(로컬)에만</strong> 저장됩니다(<code>%LocalAppData%</code>).</li>
-      <li>본 앱은 사용자의 Google 데이터를 개발자의 서버나 외부 저장소로 <strong>전송·수집·저장하지 않습니다.</strong></li>
-      <li>Google 인증은 사용자 기기의 로컬 루프백(<code>http://localhost</code>) 리디렉션으로 처리됩니다.</li>
+      <li>Google 연동에 필요한 인증 정보와 캘린더 캐시는 <strong>사용자 기기 내부에만</strong> 저장됩니다. 저장 위치는 Windows 사용자 데이터 폴더(<code>%LocalAppData%</code>)입니다.</li>
+      <li>DotDay는 사용자의 Google 데이터나 캘린더 데이터를 개발자의 서버 또는 외부 저장소로 <strong>전송·수집·저장하지 않습니다.</strong></li>
+      <li>Google 인증은 사용자 기기의 로컬 루프백(<code>http://localhost</code>) 리디렉션을 통해 처리됩니다.</li>
     </ul>
 
     <h2>4. 정보의 제3자 제공</h2>
-    <p>본 앱은 사용자의 Google 계정·캘린더 데이터를 <strong>어떠한 제3자에게도 제공·판매·공유하지 않습니다.</strong></p>
+    <p>DotDay는 사용자의 Google 계정·캘린더 데이터를 <strong>어떠한 제3자에게도 제공·판매·공유하지 않습니다.</strong></p>
 
     <h2>5. Google API 사용 제한(Limited Use)</h2>
     <div class="callout">
-      <p>본 앱이 Google API를 통해 받은 정보의 이용 및 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>(Limited Use 요건 포함)를 준수합니다.</p>
+      <p>DotDay는 Google API를 통해 받은 정보를 앱의 캘린더 표시, 일정 추가·수정·삭제 기능 제공 목적에 한해서만 사용합니다. Google API를 통해 받은 정보의 이용 및 전송은 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>의 Limited Use 요건을 준수합니다.</p>
       <p class="en">DotDay's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
     </div>
 
     <h2>6. 공휴일 정보</h2>
     <p>
-      본 앱은 한국 공휴일 표시를 위해 자체 API(<code>api.dotday.co.kr</code>)에서 공휴일 데이터를 조회합니다.
-      이 통신에는 조회 연도 정보만 포함되며, 사용자의 개인정보나 Google 데이터는 전송되지 않습니다.
+      DotDay는 한국 공휴일 표시를 위해 자체 API(<code>api.dotday.co.kr</code>)에서 공휴일 데이터를 조회합니다.
+      이때 조회 연도 정보만 사용되며, 사용자의 개인정보나 Google 캘린더 데이터는 전송되지 않습니다.
     </p>
 
     <h2>7. 데이터 삭제 및 연동 해제</h2>
     <ul>
-      <li>앱 내에서 Google 연동을 해제하면 기기에 저장된 인증 토큰이 삭제됩니다.</li>
-      <li>또는 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 계정 권한 설정</a>에서 본 앱의 액세스 권한을 언제든 취소할 수 있습니다.</li>
+      <li>앱 내에서 Google 연동을 해제하면 기기에 저장된 인증 정보가 삭제됩니다.</li>
+      <li>또는 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 계정 권한 설정</a>에서 DotDay의 액세스 권한을 언제든 취소할 수 있습니다.</li>
     </ul>
 
     <h2>8. 문의처</h2>
