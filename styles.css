@@ -9,6 +9,8 @@
   --line: #262a33;
   --accent: #6c5ce7;
   --accent2: #4aa3ff;
+  --link: #4aa3ff;
+  --text-soft: #cfd3dc;
   --radius: 14px;
   --maxw: 760px;
 }
@@ -28,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { color: var(--accent2); text-decoration: none; }
+a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
@@ -137,7 +139,7 @@ a:hover { text-decoration: underline; }
 .doc h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
 .doc .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
 .doc h2 { font-size: 20px; margin: 32px 0 10px; padding-top: 8px; }
-.doc p, .doc li { color: #cfd3dc; font-size: 15px; }
+.doc p, .doc li { color: var(--text-soft); font-size: 15px; }
 .doc ul { padding-left: 22px; margin: 8px 0; }
 .doc li { margin: 6px 0; }
 .doc .callout {
@@ -153,3 +155,21 @@ a:hover { text-decoration: underline; }
 .site-footer a { color: var(--muted); }
 .site-footer a:hover { color: var(--accent); }
 .site-footer .dot { opacity: 0.4; margin: 0 8px; }
+
+/* ── 라이트 모드 (OS 설정에 따라 자동 전환) ── */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f6f8fb;
+    --surface: #eceef3;
+    --band: #eceef3;
+    --card: #ffffff;
+    --text: #1a1d24;
+    --text-soft: #41464f;
+    --muted: #62687a;
+    --line: #e2e6ee;
+    --link: #1f6fe0;
+  }
+  .site-header { background: rgba(255,255,255,.85); }
+  .hero h1 { background: linear-gradient(135deg, #1a1d24 25%, var(--accent)); }
+  .card, .step, .cta, .faq details { box-shadow: 0 1px 3px rgba(16,24,40,.06); }
+}
