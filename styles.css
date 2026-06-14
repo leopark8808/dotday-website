@@ -79,7 +79,8 @@ a:hover { text-decoration: underline; }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(108,92,231,.35); text-decoration: none; }
 
 /* ── 기능 ── */
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 20px 0 80px; }
+.features { padding: 24px 0; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .card h3 { font-size: 17px; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 14px; }
