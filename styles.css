@@ -1,0 +1,92 @@
+/* dotday 웹사이트 — 검증/소개용 정적 페이지 */
+:root {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --text: #e8eaf0;
+  --muted: #9aa0ad;
+  --line: #262a33;
+  --accent: #6c5ce7;
+  --accent2: #4aa3ff;
+  --radius: 14px;
+  --maxw: 760px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Pretendard", -apple-system, "Segoe UI", "Malgun Gothic", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent2); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* ── 헤더 ── */
+.site-header {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0;
+  background: rgba(15,17,21,.85);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); }
+.brand .logo {
+  width: 28px; height: 28px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+.nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
+.nav a:hover { color: var(--text); text-decoration: none; }
+
+/* ── 히어로 ── */
+.hero { text-align: center; padding: 80px 0 60px; }
+.hero h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  font-weight: 800; letter-spacing: -1px;
+  background: linear-gradient(135deg, #fff 30%, var(--accent2));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero p { color: var(--muted); font-size: clamp(16px, 2.5vw, 20px); margin: 18px auto 32px; max-width: 520px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff; font-weight: 600; font-size: 16px;
+  padding: 14px 28px; border-radius: 999px; border: 0; cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(108,92,231,.35); text-decoration: none; }
+
+/* ── 기능 ── */
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; padding: 20px 0 80px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.card h3 { font-size: 17px; margin-bottom: 8px; }
+.card p { color: var(--muted); font-size: 14px; }
+.card .ic { font-size: 24px; margin-bottom: 12px; display: block; }
+
+/* ── 문서(개인정보처리방침) ── */
+.doc { padding: 48px 0 80px; }
+.doc h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
+.doc .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+.doc h2 { font-size: 20px; margin: 32px 0 10px; padding-top: 8px; }
+.doc p, .doc li { color: #cfd3dc; font-size: 15px; }
+.doc ul { padding-left: 22px; margin: 8px 0; }
+.doc li { margin: 6px 0; }
+.doc .callout {
+  background: var(--surface); border: 1px solid var(--line);
+  border-left: 3px solid var(--accent); border-radius: 10px;
+  padding: 16px 18px; margin: 16px 0; font-size: 14px;
+}
+.doc .en { color: var(--muted); font-style: italic; font-size: 13.5px; }
+
+/* ── 푸터 ── */
+.site-footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 13px; }
+.site-footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+.site-footer a { color: var(--muted); }
