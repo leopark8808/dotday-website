@@ -38,16 +38,17 @@ a:hover { text-decoration: underline; }
   z-index: 10;
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
-.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); }
-.brand .logo {
-  width: 28px; height: 28px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-}
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; color: var(--text); }
+.brand .logo { width: 28px; height: 28px; display: block; }
 .nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
 .nav a:hover { color: var(--text); text-decoration: none; }
 
 /* ── 히어로 ── */
-.hero { text-align: center; padding: 80px 0 60px; }
+.hero { text-align: center; padding: 64px 0 60px; }
+.hero-logo {
+  width: 96px; height: 96px; display: block; margin: 0 auto 16px;
+  filter: drop-shadow(0 10px 30px rgba(108,92,231,.35));
+}
 .hero h1 {
   font-size: clamp(32px, 6vw, 52px);
   font-weight: 800; letter-spacing: -1px;
@@ -90,3 +91,5 @@ a:hover { text-decoration: underline; }
 .site-footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 13px; }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
 .site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--accent); }
+.site-footer .dot { opacity: 0.4; margin: 0 8px; }
