@@ -40,8 +40,18 @@ a:hover { text-decoration: underline; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; color: var(--text); }
 .brand .logo { width: 28px; height: 28px; display: block; }
+.nav { display: flex; align-items: center; }
 .nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
 .nav a:hover { color: var(--text); text-decoration: none; }
+.nav a.btn-nav {
+  color: #fff; font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  padding: 8px 18px; border-radius: 999px;
+}
+.nav a.btn-nav:hover { color: #fff; opacity: .92; box-shadow: 0 6px 18px rgba(108,92,231,.3); }
+@media (max-width: 560px) {
+  .nav a:not(.btn-nav) { display: none; }
+}
 
 /* ── 히어로 ── */
 .hero { text-align: center; padding: 64px 0 60px; }
@@ -71,6 +81,39 @@ a:hover { text-decoration: underline; }
 .card h3 { font-size: 17px; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 14px; }
 .card .ic { font-size: 24px; margin-bottom: 12px; display: block; }
+
+/* ── 섹션 공통 ── */
+.section-title { text-align: center; font-size: clamp(24px, 4vw, 32px); font-weight: 800; letter-spacing: -.5px; }
+.section-sub { text-align: center; color: var(--muted); font-size: 15px; margin-top: 8px; }
+
+/* ── 시작하기 ── */
+.steps { padding: 24px 0; }
+.step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
+.step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.step-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 999px; font-weight: 700; font-size: 15px;
+  color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent2)); margin-bottom: 14px;
+}
+.step h3 { font-size: 16px; margin-bottom: 8px; }
+.step h3 em { color: var(--muted); font-weight: 500; font-style: normal; font-size: 13px; }
+.step p { color: var(--muted); font-size: 14px; }
+
+/* ── FAQ ── */
+.faq { padding: 48px 0 80px; }
+.faq .section-title { margin-bottom: 28px; }
+.faq details {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 2px 18px; margin: 12px 0;
+}
+.faq summary {
+  cursor: pointer; font-weight: 600; font-size: 15px; padding: 16px 0; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--muted); font-size: 22px; font-weight: 400; line-height: 1; }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { color: var(--muted); font-size: 14px; padding: 0 0 16px; margin: 0; }
 
 /* ── 문서(개인정보처리방침) ── */
 .doc { padding: 48px 0 80px; }
