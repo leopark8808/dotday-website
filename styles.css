@@ -12,7 +12,7 @@
   --link: #4aa3ff;
   --text-soft: #cfd3dc;
   --radius: 14px;
-  --maxw: 760px;
+  --maxw: 1080px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -135,7 +135,7 @@ a:hover { text-decoration: underline; }
 .faq details p { color: var(--muted); font-size: 14px; padding: 0 0 16px; margin: 0; }
 
 /* ── 문서(개인정보처리방침) ── */
-.doc { padding: 48px 0 80px; }
+.doc { max-width: 760px; padding: 48px 24px 80px; }
 .doc h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
 .doc .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
 .doc h2 { font-size: 20px; margin: 32px 0 10px; padding-top: 8px; }
@@ -170,6 +170,6 @@ a:hover { text-decoration: underline; }
     --link: #1f6fe0;
   }
   .site-header { background: rgba(255,255,255,.85); }
-  .hero h1 { background: linear-gradient(135deg, #1a1d24 25%, var(--accent)); }
+  .hero h1 { background-image: linear-gradient(135deg, #1a1d24 25%, var(--accent)); }
   .card, .step, .cta, .faq details { box-shadow: 0 1px 3px rgba(16,24,40,.06); }
 }
