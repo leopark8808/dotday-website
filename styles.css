@@ -2,6 +2,8 @@
 :root {
   --bg: #0f1115;
   --surface: #171a21;
+  --band: #171a21;
+  --card: #1e222b;
   --text: #e8eaf0;
   --muted: #9aa0ad;
   --line: #262a33;
@@ -30,6 +32,9 @@ a { color: var(--accent2); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* 교차 배경 밴드: 섹션 영역 구분 */
+.band { background: var(--band); }
 
 /* ── 헤더 ── */
 .site-header {
@@ -81,7 +86,7 @@ a:hover { text-decoration: underline; }
 /* ── 기능 ── */
 .features { padding: 24px 0; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
-.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .card h3 { font-size: 17px; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 14px; }
 .card .ic { font-size: 24px; margin-bottom: 12px; display: block; }
@@ -93,7 +98,7 @@ a:hover { text-decoration: underline; }
 /* ── 시작하기 ── */
 .steps { padding: 24px 0; }
 .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
-.step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.step { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .step-num {
   display: inline-flex; align-items: center; justify-content: center;
   width: 32px; height: 32px; border-radius: 999px; font-weight: 700; font-size: 15px;
@@ -109,13 +114,13 @@ a:hover { text-decoration: underline; }
 .cta-wrap { padding: 40px 0 88px; }
 .cta {
   text-align: center;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 48px 28px;
 }
 .cta .section-sub { margin: 10px 0 28px; }
 .faq .section-title { margin-bottom: 28px; }
 .faq details {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   padding: 2px 18px; margin: 12px 0;
 }
 .faq summary {
