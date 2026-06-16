@@ -48,9 +48,9 @@ a:hover { text-decoration: underline; }
   z-index: 10;
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; }
-.brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; color: var(--text); }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 22px; color: var(--text); }
 .brand:hover { text-decoration: none; }
-.brand .logo { width: 28px; height: 28px; display: block; }
+.brand .logo { width: 38px; height: 38px; display: block; }
 .nav { display: flex; align-items: center; }
 .nav a { color: var(--muted); margin-left: 20px; font-size: 14px; }
 .nav a:hover { color: var(--text); text-decoration: none; }
@@ -65,9 +65,9 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── 히어로 ── */
-.hero { text-align: center; padding-block: 64px 60px; }
+.hero { text-align: center; padding-block: 28px 18px; }
 .hero-logo {
-  width: 96px; height: 96px; display: block; margin: 0 auto 16px;
+  width: 84px; height: 84px; display: block; margin: 0 auto 12px;
   filter: drop-shadow(0 10px 30px rgba(108,92,231,.35));
 }
 .hero h1 {
