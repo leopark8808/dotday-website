@@ -89,7 +89,7 @@ a:hover { text-decoration: underline; }
 /* ── 제품 스크린샷 ── */
 .shot { padding-block: 8px 32px; }
 .shot-frame {
-  max-width: 960px; margin: 0 auto;
+  max-width: 840px; margin: 0 auto;
   border-radius: 18px; overflow: hidden;
   border: 1px solid var(--line);
   box-shadow: 0 24px 60px rgba(0,0,0,.35);
