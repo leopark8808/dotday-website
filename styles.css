@@ -104,6 +104,7 @@ a:hover { text-decoration: underline; }
 .trust { padding: 56px 0; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; height: 100%; }
+.usecase .card { padding: 30px 26px; }
 .card h3 { font-size: 17px; margin-bottom: 8px; }
 .card p { color: var(--muted); font-size: 14px; }
 .card .ic { font-size: 24px; margin-bottom: 12px; display: block; }
