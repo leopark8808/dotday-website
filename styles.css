@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── 기능 ── */
-.features { padding: 24px 0; }
+.features { padding: 56px 0; }
 .trust { padding: 56px 0; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; height: 100%; }
@@ -125,7 +125,7 @@ a:hover { text-decoration: underline; }
 .step p { color: var(--muted); font-size: 14px; }
 
 /* ── FAQ ── */
-.faq { padding: 48px 0 40px; }
+.faq { padding: 56px 0; }
 
 /* ── 마무리 CTA ── */
 .cta-wrap { padding-block: 40px 88px; }
