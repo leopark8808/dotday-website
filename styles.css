@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* ── 기능 ── */
-.features { padding: 56px 0; }
+.features, .usecase { padding: 56px 0; }
 .trust { padding: 56px 0; }
 .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; height: 100%; }
