@@ -154,6 +154,7 @@ a:hover { text-decoration: underline; }
 .doc h1 { font-size: 30px; font-weight: 800; margin-bottom: 6px; }
 .doc .updated { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
 .doc h2 { font-size: 20px; margin: 32px 0 10px; padding-top: 8px; }
+.doc h3 { font-size: 16px; margin: 22px 0 6px; }
 .doc p, .doc li { color: var(--text-soft); font-size: 15px; }
 .doc ul { padding-left: 22px; margin: 8px 0; }
 .doc li { margin: 6px 0; }
