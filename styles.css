@@ -71,7 +71,7 @@ a:hover { text-decoration: underline; }
   filter: drop-shadow(0 10px 30px rgba(108,92,231,.35));
 }
 .hero h1 {
-  font-size: clamp(32px, 6vw, 52px);
+  font-size: clamp(32px, 6vw, 52px); line-height: 1.35;
   font-weight: 800; letter-spacing: -1px;
   background: linear-gradient(135deg, #fff 30%, var(--accent2));
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
