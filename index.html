@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DotDay - 바탕화면 캘린더 위젯</title>
-  <meta name="description" content="바탕화면 위에 사는 월간 캘린더 위젯. Google 캘린더 연동, 한국 공휴일, 일정 추가까지." />
+  <meta name="description" content="바탕화면 위에 사는 월간 캘린더 위젯. Google·Apple(iCloud)·CalDAV 캘린더 연동, 한국 공휴일, 일정 추가까지." />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f8fb" />
   <link rel="icon" type="image/png" href="/assets/favicon.png?v=2" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dotday-website.pages.dev/" />
   <meta property="og:title" content="DotDay - 바탕화면 캘린더 위젯" />
-  <meta property="og:description" content="아이콘 위에 또렷하게 떠 있는 캘린더 위젯. Google 캘린더 연동과 한국 공휴일까지." />
+  <meta property="og:description" content="아이콘 위에 또렷하게 떠 있는 캘린더 위젯. Google·Apple(iCloud)·CalDAV 캘린더 연동과 한국 공휴일까지." />
   <meta property="og:image" content="https://dotday-website.pages.dev/assets/og_image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -66,7 +66,7 @@
         <div class="card">
           <span class="ic">🗂️</span>
           <h3>여러 캘린더를 함께 보고 싶을 때</h3>
-          <p>Google Calendar와 표준 CalDAV 캘린더, 한국 공휴일까지 한 화면에서 함께 확인할 수 있어요.</p>
+          <p>Google Calendar와 Apple(iCloud)·표준 CalDAV 캘린더, 한국 공휴일까지 한 화면에서 함께 확인할 수 있어요.</p>
         </div>
       </div>
     </section>
@@ -79,7 +79,7 @@
           <div class="card">
             <span class="ic">🗓️</span>
             <h3>바탕화면 위젯</h3>
-            <p>바탕화면에 자연스럽게 붙여두고 오늘 날짜와 일정을 바로 확인하세요. 위치와 크기, 투명도를 조절해 내 작업 환경에 맞게 사용할 수 있어요.</p>
+            <p>바탕화면에 자연스럽게 붙여두고 오늘 날짜와 일정을 바로 확인하세요. 위젯에서 일정을 더블클릭하면 본체 창을 열지 않고 바로 추가·편집할 수 있고, 위치와 크기, 투명도도 작업 환경에 맞게 조절할 수 있어요.</p>
           </div>
           <div class="card">
             <span class="ic"><svg width="27" height="27" viewBox="0 0 48 48" style="display:block" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
@@ -87,9 +87,19 @@
             <p>Google Calendar의 일정을 DotDay에서 함께 확인할 수 있어요. 여러 Google 캘린더를 색상으로 구분하고, 새 일정을 원하는 캘린더에 저장하거나 다른 캘린더로 이동할 수 있어요.</p>
           </div>
           <div class="card">
+            <span class="ic"><svg width="22" height="27" viewBox="0 0 384 512" style="display:block" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg></span>
+            <h3>Apple(iCloud) 캘린더 연동</h3>
+            <p>iCloud 캘린더의 일정을 DotDay에서 함께 확인할 수 있어요. Apple ID와 앱 전용 암호로 간편하게 연결하고, 캘린더별 색상·장소·여러 날 일정·반복 일정까지 그대로 표시돼요.</p>
+          </div>
+          <div class="card">
             <span class="ic">🌐</span>
             <h3>CalDAV 캘린더 연동</h3>
             <p>표준 CalDAV 캘린더의 일정을 DotDay에서 함께 확인할 수 있어요. 표시할 캘린더를 개별로 선택하고, 일정 색상·장소·여러 날 일정·반복 일정도 확인할 수 있어요.</p>
+          </div>
+          <div class="card">
+            <span class="ic">✏️</span>
+            <h3>일정 추가·편집</h3>
+            <p>새 일정을 만들고 기존 일정을 수정·삭제할 수 있어요. 제목·시간·종일·장소·설명을 입력하고, 어느 캘린더에 저장할지 고르거나 작성한 일정을 다른 캘린더로 옮길 수도 있어요.</p>
           </div>
           <div class="card">
             <span class="ic">🔁</span>
@@ -149,7 +159,7 @@
         </details>
         <details>
           <summary>Google 외 다른 캘린더도 함께 볼 수 있나요?</summary>
-          <p>네. 표준 CalDAV를 지원하는 캘린더를 연결하면 DotDay에서 함께 확인할 수 있어요. 표시할 캘린더를 개별로 선택할 수 있고, 캘린더별 색상도 함께 표시돼 여러 일정을 구분하기 쉬워요.</p>
+          <p>네. Apple(iCloud) 캘린더와 표준 CalDAV를 지원하는 캘린더를 연결하면 DotDay에서 함께 확인할 수 있어요. iCloud는 Apple ID와 앱 전용 암호로 연결하고, 표시할 캘린더를 개별로 선택할 수 있어요. 캘린더별 색상도 함께 표시돼 여러 일정을 구분하기 쉬워요.</p>
         </details>
         <details>
           <summary>반복 일정도 만들 수 있나요?</summary>
@@ -189,7 +199,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <div>DotDay <span class="dot">·</span> 버전 <span id="appVersion">1.3.0</span></div>
+      <div><a href="/">DotDay</a> <span class="dot">·</span> 버전 <span id="appVersion">1.3.0</span></div>
       <div>
         <a href="https://apps.microsoft.com/detail/9MWXX5BVG5JW?hl=ko-kr&amp;gl=KR" target="_blank" rel="noopener">Microsoft Store</a>
         <span class="dot">·</span>
