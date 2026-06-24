@@ -137,6 +137,8 @@ a:hover { text-decoration: underline; }
 
 /* ── 마무리 CTA ── */
 .cta-wrap { padding-block: 40px 88px; }
+/* 상단 '다운로드' 버튼이 이 섹션으로 앵커될 때 sticky 헤더에 제목이 가리지 않도록 오프셋 */
+#download { scroll-margin-top: 90px; }
 .cta {
   text-align: center;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
