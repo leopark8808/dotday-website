@@ -9,7 +9,7 @@
       <pubDate>Thu, 25 Jun 2026 03:26:02 +09:00</pubDate>
       <sparkle:version>1.3.4.0</sparkle:version>
       <sparkle:shortVersionString>1.3.4.0</sparkle:shortVersionString>
-      <enclosure url="https://github.com/leopark8808/dotday-releases/releases/download/v1.3.4.0/DotDay-Setup-1.3.4.0.exe" sparkle:version="1.3.4.0" sparkle:shortVersionString="1.3.4.0" length="55326174" sparkle:os="windows" type="application/x-msdos-program" sparkle:criticalUpdate="false" sparkle:signature="HNxNY/fiUANc0QubIY6i00uKjcfWGe3RhRDmrQRnuDhEaKCvI05OyqrAZEyWNMkMNmWimXzK5GIFueznHyvpCw==" />
+      <enclosure url="https://github.com/leopark8808/dotday-releases/releases/download/v1.3.4.0/DotDay-Setup-1.3.4.0.exe" sparkle:version="1.3.4.0" sparkle:shortVersionString="1.3.4.0" length="55352715" sparkle:os="windows" type="application/x-msdos-program" sparkle:criticalUpdate="false" sparkle:signature="+uyR5c97s3ma+VWFvPGed5xFgD+7qXMkN3sGXwI74sHiCfEdWd4GeDHkSB4Z4+n1r8y7fvTwAlyG8s4Zw3d0Ag==" />
     </item>
   </channel>
 </rss>
