@@ -5,11 +5,11 @@
     <description>Most recent changes with links to updates</description>
     <language>en</language>
     <item>
-      <title>DotDay 1.3.3.0</title>
-      <pubDate>Thu, 25 Jun 2026 02:48:38 +09:00</pubDate>
-      <sparkle:version>1.3.3.0</sparkle:version>
-      <sparkle:shortVersionString>1.3.3.0</sparkle:shortVersionString>
-      <enclosure url="https://github.com/leopark8808/dotday-releases/releases/download/v1.3.3.0/DotDay-Setup-1.3.3.0.exe" sparkle:version="1.3.3.0" sparkle:shortVersionString="1.3.3.0" length="55325507" sparkle:os="windows" type="application/x-msdos-program" sparkle:criticalUpdate="false" sparkle:signature="CmIQBHZ1jnd359ywc846coLwrg0l7O3Vy+kQ4kjFMiNTlX85stNsvCDU1ahhiJUc5PgmtWFZhG85itwIdtvADA==" />
+      <title>DotDay 1.3.4.0</title>
+      <pubDate>Thu, 25 Jun 2026 03:26:02 +09:00</pubDate>
+      <sparkle:version>1.3.4.0</sparkle:version>
+      <sparkle:shortVersionString>1.3.4.0</sparkle:shortVersionString>
+      <enclosure url="https://github.com/leopark8808/dotday-releases/releases/download/v1.3.4.0/DotDay-Setup-1.3.4.0.exe" sparkle:version="1.3.4.0" sparkle:shortVersionString="1.3.4.0" length="55326174" sparkle:os="windows" type="application/x-msdos-program" sparkle:criticalUpdate="false" sparkle:signature="HNxNY/fiUANc0QubIY6i00uKjcfWGe3RhRDmrQRnuDhEaKCvI05OyqrAZEyWNMkMNmWimXzK5GIFueznHyvpCw==" />
     </item>
   </channel>
 </rss>
