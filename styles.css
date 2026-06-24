@@ -85,6 +85,13 @@ a:hover { text-decoration: underline; }
   transition: transform .15s ease, box-shadow .15s ease;
 }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(108,92,231,.35); text-decoration: none; }
+.btn-secondary {
+  background: transparent;
+  border: 1.5px solid var(--line);
+  color: var(--text-soft);
+}
+.btn-secondary:hover { border-color: var(--accent2); color: var(--accent2); box-shadow: 0 6px 20px rgba(74,163,255,.2); }
+.cta-note { font-size: 13px; color: var(--muted); margin-top: 16px; }
 
 /* ── 제품 스크린샷 ── */
 .shot { padding-block: 8px 32px; }
