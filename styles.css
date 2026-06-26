@@ -91,7 +91,7 @@ a:hover { text-decoration: underline; }
   color: var(--text-soft);
 }
 .btn-secondary:hover { border-color: var(--accent2); color: var(--accent2); box-shadow: 0 6px 20px rgba(74,163,255,.2); }
-.cta-note { font-size: 11px; color: var(--muted); margin-top: 16px; }
+.cta-note { font-size: 9px; color: var(--muted); margin-top: 16px; }
 
 /* ── 제품 스크린샷 ── */
 .shot { padding-block: 8px 32px; }
