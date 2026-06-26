@@ -76,7 +76,7 @@ a:hover { text-decoration: underline; }
   background: linear-gradient(135deg, #fff 30%, var(--accent2));
   -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
 }
-.hero p { color: var(--muted); font-size: clamp(16px, 2.5vw, 20px); margin: 18px auto 32px; max-width: 520px; }
+.hero p:not(.cta-note) { color: var(--muted); font-size: clamp(16px, 2.5vw, 20px); margin: 18px auto 32px; max-width: 520px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: linear-gradient(135deg, var(--accent), var(--accent2));
