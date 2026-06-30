@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DotDay - 바탕화면 캘린더 위젯</title>
-  <meta name="description" content="바탕화면 위에 사는 월간 캘린더 위젯. Google·Apple(iCloud)·CalDAV 캘린더 연동, 한국 공휴일, 일정 추가까지." />
+  <meta name="description" content="바탕화면 위에 사는 월간 캘린더 위젯. Google·Apple(iCloud)·네이버·CalDAV 캘린더 연동, 일정 알림, 한국 공휴일, 일정 추가까지." />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f8fb" />
   <link rel="icon" type="image/png" href="/assets/favicon.png?v=2" />
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dotday-website.pages.dev/" />
   <meta property="og:title" content="DotDay - 바탕화면 캘린더 위젯" />
-  <meta property="og:description" content="아이콘 위에 또렷하게 떠 있는 캘린더 위젯. Google·Apple(iCloud)·CalDAV 캘린더 연동과 한국 공휴일까지." />
+  <meta property="og:description" content="아이콘 위에 또렷하게 떠 있는 캘린더 위젯. Google·Apple(iCloud)·네이버·CalDAV 캘린더 연동과 일정 알림, 한국 공휴일까지." />
   <meta property="og:image" content="https://dotday-website.pages.dev/assets/og_image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -68,7 +68,7 @@
         <div class="card">
           <span class="ic">🗂️</span>
           <h3>여러 캘린더를 함께 보고 싶을 때</h3>
-          <p>Google Calendar와 Apple(iCloud)·표준 CalDAV 캘린더, 한국 공휴일까지 한 화면에서 함께 확인할 수 있어요.</p>
+          <p>Google·Apple(iCloud)·네이버·표준 CalDAV 캘린더와 한국 공휴일까지 한 화면에서 함께 확인할 수 있어요.</p>
         </div>
       </div>
     </section>
@@ -84,6 +84,11 @@
             <p>바탕화면에 자연스럽게 붙여두고 오늘 날짜와 일정을 바로 확인하세요. 위젯에서 일정을 더블클릭하면 본체 창을 열지 않고 바로 추가·편집할 수 있고, 위치와 크기, 투명도도 작업 환경에 맞게 조절할 수 있어요.</p>
           </div>
           <div class="card">
+            <span class="ic">🔔</span>
+            <h3>일정 알림</h3>
+            <p>일정 시작 전에 바탕화면 우하단에 알림 카드로 알려드려요. 시작 시·5분 전·10분 전 등 원하는 시각을 여러 개 고를 수 있고, 알림을 클릭하면 그 일정의 상세를 바로 확인할 수 있어요. Windows 알림 설정과 상관없이 항상 보여요.</p>
+          </div>
+          <div class="card">
             <span class="ic"><svg width="27" height="27" viewBox="0 0 48 48" style="display:block" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
             <h3>Google 캘린더 연동</h3>
             <p>Google Calendar의 일정을 DotDay에서 함께 확인할 수 있어요. 여러 Google 캘린더를 색상으로 구분하고, 새 일정을 원하는 캘린더에 저장하거나 다른 캘린더로 이동할 수 있어요.</p>
@@ -94,9 +99,14 @@
             <p>iCloud 캘린더의 일정을 DotDay에서 함께 확인할 수 있어요. Apple ID와 앱 전용 암호로 간편하게 연결하고, 캘린더별 색상·장소·여러 날 일정·반복 일정까지 그대로 표시돼요.</p>
           </div>
           <div class="card">
+            <span class="ic"><svg width="26" height="26" viewBox="0 0 48 48" style="display:block" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#03C75A"/><path fill="#fff" d="M17 15h6l5 8.5V15h5v18h-6l-5-8.5V33h-5z"/></svg></span>
+            <h3>네이버 캘린더 연동</h3>
+            <p>네이버 캘린더의 일정을 DotDay에서 함께 확인할 수 있어요. 서버 주소 없이 네이버 아이디와 비밀번호만으로 간편하게 연결하고, 일정을 보는 것은 물론 직접 추가·수정·삭제하거나 반복 일정도 만들 수 있어요.</p>
+          </div>
+          <div class="card">
             <span class="ic">🌐</span>
             <h3>CalDAV 캘린더 연동</h3>
-            <p>표준 CalDAV 캘린더의 일정을 DotDay에서 함께 확인할 수 있어요. 표시할 캘린더를 개별로 선택하고, 일정 색상·장소·여러 날 일정·반복 일정도 확인할 수 있어요.</p>
+            <p>그 밖의 표준 CalDAV 캘린더도 연결할 수 있어요. 표시할 캘린더를 개별로 선택하고, 일정 색상·장소·여러 날 일정·반복 일정을 확인하는 것은 물론 일정을 직접 추가·수정·삭제할 수 있어요.</p>
           </div>
           <div class="card">
             <span class="ic">✏️</span>
@@ -106,12 +116,12 @@
           <div class="card">
             <span class="ic">🔁</span>
             <h3>반복 일정</h3>
-            <p>매일·매주·매월·매년 반복되는 일정을 만들 수 있어요. 수정하거나 삭제할 때는 “이 일정만” 또는 “전체 반복” 중에서 선택할 수 있어요.</p>
+            <p>매일·매주·매월·매년 반복되는 일정을 만들 수 있어요. Google뿐 아니라 네이버 등 CalDAV 캘린더에서도 반복 일정을 만들고, 수정하거나 삭제할 때는 “이 일정만” 또는 “전체 반복” 중에서 선택할 수 있어요.</p>
           </div>
           <div class="card">
             <span class="ic">📋</span>
             <h3>일정 상세 보기</h3>
-            <p>일정을 더블클릭하면 시간, 장소, 설명, 반복 정보, 참석자, 주최자, 회의 링크를 한눈에 볼 수 있어요. 읽기 전용 일정도 깔끔하게 확인할 수 있어요.</p>
+            <p>일정을 더블클릭하면 시간, 장소, 설명, 반복 정보, 참석자, 주최자, 회의 링크를 한눈에 볼 수 있어요. 회의 일정은 내 참석 응답(수락·미정·거절)을 바로 바꿔 서버에 반영할 수도 있어요.</p>
           </div>
           <div class="card">
             <span class="ic">🎉</span>
@@ -161,7 +171,11 @@
         </details>
         <details>
           <summary>Google 외 다른 캘린더도 함께 볼 수 있나요?</summary>
-          <p>네. Apple(iCloud) 캘린더와 표준 CalDAV를 지원하는 캘린더를 연결하면 DotDay에서 함께 확인할 수 있어요. iCloud는 Apple ID와 앱 전용 암호로 연결하고, 표시할 캘린더를 개별로 선택할 수 있어요. 캘린더별 색상도 함께 표시돼 여러 일정을 구분하기 쉬워요.</p>
+          <p>네. Apple(iCloud)·네이버 캘린더와 표준 CalDAV를 지원하는 캘린더를 연결하면 DotDay에서 함께 확인할 수 있어요. iCloud는 Apple ID와 앱 전용 암호로, 네이버는 아이디와 비밀번호로 연결하고, 표시할 캘린더를 개별로 선택할 수 있어요. 캘린더별 색상도 함께 표시돼 여러 일정을 구분하기 쉬워요.</p>
+        </details>
+        <details>
+          <summary>네이버 캘린더도 연결할 수 있나요?</summary>
+          <p>네. 네이버 아이디와 비밀번호(2단계 인증을 쓰는 경우 애플리케이션 비밀번호)만 입력하면 서버 주소 없이 바로 연결돼요. 일정을 함께 보는 것은 물론, 네이버 캘린더에 일정을 직접 추가·수정·삭제하고 반복 일정도 만들 수 있어요.</p>
         </details>
         <details>
           <summary>반복 일정도 만들 수 있나요?</summary>
@@ -170,6 +184,10 @@
         <details>
           <summary>일정 상세 내용도 확인할 수 있나요?</summary>
           <p>네. 일정을 더블클릭하면 시간, 장소, 설명, 반복 정보, 참석자, 주최자, 회의 링크 등을 상세 보기 카드로 확인할 수 있어요. 여러 캘린더의 일정도 한눈에 보기 좋게 정리됩니다.</p>
+        </details>
+        <details>
+          <summary>일정 시작 전에 알림을 받을 수 있나요?</summary>
+          <p>네. 설정에서 일정 알림을 켜면 일정 시작 전 바탕화면 우하단에 알림 카드가 떠요. 시작 시·1분 전·5분 전·10분 전·30분 전·1시간 전 중에서 원하는 시각을 여러 개 고를 수 있고, 알림을 클릭하면 그 일정의 상세를 바로 볼 수 있어요. 앱이 직접 표시하는 알림이라 Windows 알림 설정과 상관없이 보여요.</p>
         </details>
         <details>
           <summary>공휴일은 자동으로 표시되나요?</summary>
