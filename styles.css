@@ -109,7 +109,7 @@ a:hover { text-decoration: underline; }
 /* ── 기능 ── */
 .features, .usecase { padding: 56px 0; }
 .trust { padding: 56px 0; }
-.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 28px; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); grid-auto-rows: 1fr; gap: 16px; margin-top: 28px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; height: 100%; }
 .usecase .card { padding: 30px 26px; }
 /* '주요 기능' 카드 폭·정렬을 '이런 순간에'(위) 섹션과 동일하게 맞춤(좌우 풀폭) */
