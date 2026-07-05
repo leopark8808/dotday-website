@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="DotDay 바탕화면 캘린더 위젯" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://dotday-website.pages.dev/assets/og_image.png" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 </head>
 <body>
   <header class="site-header">
@@ -42,8 +42,9 @@
       <a class="btn" href="https://apps.microsoft.com/detail/9MWXX5BVG5JW?hl=ko-kr&amp;gl=KR" target="_blank" rel="noopener">
         Microsoft Store에서 받기
       </a>
-      <a class="btn btn-secondary" href="https://github.com/leopark8808/dotday-releases/releases/latest/download/DotDay-Setup-2.2.0.0.exe">직접 다운로드 (.exe)</a>
-      <p class="cta-note">직접 다운로드(.exe) 실행 시 Windows 경고가 나오면<br />추가 정보 → 실행을 눌러주세요.</p>
+      <a class="btn btn-secondary pc-only" href="https://github.com/leopark8808/dotday-releases/releases/latest/download/DotDay-Setup-2.2.0.0.exe">직접 다운로드 (.exe)</a>
+      <p class="cta-note pc-only">직접 다운로드(.exe) 실행 시 Windows 경고가 나오면<br />추가 정보 → 실행을 눌러주세요.</p>
+      <p class="cta-note mobile-only">DotDay는 PC 전용 앱입니다.<br />PC(Windows)에서 접속하면 설치할 수 있습니다.</p>
     </section>
 
     <section class="shot wrap">
@@ -213,8 +214,9 @@
         <h2 class="section-title">바탕화면에서 오늘 일정을 바로 확인하세요</h2>
         <p class="section-sub">캘린더 앱을 열지 않아도 오늘 일정, 한국 공휴일, 연동 캘린더를 한눈에 확인할 수 있어요.</p>
         <a class="btn" href="https://apps.microsoft.com/detail/9MWXX5BVG5JW?hl=ko-kr&amp;gl=KR" target="_blank" rel="noopener">Microsoft Store에서 받기</a>
-        <a class="btn btn-secondary" href="https://github.com/leopark8808/dotday-releases/releases/latest/download/DotDay-Setup-2.2.0.0.exe">직접 다운로드 (.exe)</a>
-        <p class="cta-note">직접 다운로드(.exe) 실행 시 Windows 경고가 나오면<br />추가 정보 → 실행을 눌러주세요.</p>
+        <a class="btn btn-secondary pc-only" href="https://github.com/leopark8808/dotday-releases/releases/latest/download/DotDay-Setup-2.2.0.0.exe">직접 다운로드 (.exe)</a>
+        <p class="cta-note pc-only">직접 다운로드(.exe) 실행 시 Windows 경고가 나오면<br />추가 정보 → 실행을 눌러주세요.</p>
+        <p class="cta-note mobile-only">DotDay는 PC 전용 앱입니다.<br />PC(Windows)에서 접속하면 설치할 수 있습니다.</p>
       </div>
     </section>
   </main>
@@ -234,6 +236,13 @@
     fetch('/version.json').then(r=>r.json()).then(d=>{
       if(d&&d.version) document.querySelectorAll('#appVersion').forEach(el=>el.textContent=d.version);
     }).catch(()=>{});
+    // 모바일에선 exe 직접 다운로드가 무의미 → 버튼·경고 안내 숨기고 PC 전용 안내 노출
+    // (최신 아이패드는 UA가 Mac으로 잡히므로 터치포인트로 구분)
+    (function(){
+      var ua = navigator.userAgent || '';
+      if (/Android|iPhone|iPad|iPod|Windows Phone/i.test(ua) || (/Mac/i.test(ua) && navigator.maxTouchPoints > 1))
+        document.documentElement.className += ' is-mobile';
+    })();
   </script>
 </body>
 </html>
